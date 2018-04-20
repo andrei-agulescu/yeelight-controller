@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #313131;
+  padding: 10px;
+  min-width: 500px;
+  min-height: 300px;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.btn:active {
+  box-shadow: inset 0 0 12px #000;
+}
+
+.btn-round {
+  border-radius: 50%;
+}
+
+body, ul {
+  margin: 0;
+}
+
+ul {
+  list-style-position: inside;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+  background-color: #ccc;
+  border-radius: 3px;
+  color: white;
+}
+
+ul li div {
+  width: 35px;
+  height: 35px;
+  overflow: hidden;
+  transition: width ease-in .48s;
+}
+
+ul li div.show-all-options {
+  width: 110px;
+  overflow: hidden;
+}
+
+ul li, nav .btn, #edit-form .btn {
+  background-color: #3f404a;
+}
+
+ul li, section {
+  margin-bottom: 6px;
+}
+
+section form, section form div {
+  display: flex;
+  flex-direction: column;
+}
+
+section form div {
+  margin-bottom: 10px;
+}
+
+form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: white;
+}
+
+form input {
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  background-color: #3f404a;
+}
+
+form input:focus {
+  box-shadow: inset 0 0 5px #000;
+}
+
+.alert {
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.alert h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.alert p {
+  margin: 10px 0 0;
+}
+
+.alert-error {
+  background-color: #ff4c4c;
+}
+
+.alert-warning {
+  background-color: #ffff71;
+  color: black;
+}
+
+.alert-success {
+  background-color: #4caf50;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .btn {
+  width: 100%;
+}
+
+#edit-item {
+  margin-right: 10px;
+}
+
+nav .btn, ul li, form input {
+  box-shadow: 0 2px 2px #000;
+}
+
+.btn-primary {
+  background-color: #4caf50 !important;
+}
+
+.hidden {
+  display: none !important;
+}

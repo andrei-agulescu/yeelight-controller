@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yeelight</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="js/script.js"></script>
+</head>
+<body>
+    <section id="alert-container"></section>
+    
+    <section id="main-controls">
+        <nav>
+            <button class="btn" id="edit-item" onclick="showEditOptions()"><i class="fas fa-edit"></i>Edit</button>
+            <button class="btn" id="add-item" onclick="addNewItem()"><i class="fas fa-plus-circle"></i>Add</button>
+        </nav>
+    </section>
+
+    <section id="listing">
+        <ul id="list-container"></ul>
+    </section>
+
+    <section id="edit-form">
+        <form>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name">
+            </div>
+            <div>
+                <label for="key">Key:</label>
+                <input type="text" id="key">
+            </div>
+            <div>
+                <label for="action">Action:</label>
+                <input type="text" id="action">
+            </div>
+        </form>
+        <button class="btn btn-primary" type="submit" onclick="saveFormInput()">Save</button>
+        <button class="btn" onclick="cancelForm()">Cancel</button>
+
+    </section>
+
+    <script type="text/javascript">(function() { switchToView('listing') })();</script>
+
+</body>
+</html>
